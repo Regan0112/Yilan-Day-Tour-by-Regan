@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宜蘭放鬆一日遊行程表</title>
+    <style>
+        :root {
+            --primary: #4a7c59;
+            --secondary: #8fc0a9;
+            --accent: #f4a261;
+            --bg: #f8f9fa;
+            --text: #2d3436;
+        }
+
+        body {
+            font-family: -apple-system, "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            color: var(--primary);
+            margin: 0;
+            font-size: 1.8em;
+            letter-spacing: 2px;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 0;
+            list-style: none;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: var(--secondary);
+            border-radius: 3px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+            padding-left: 55px;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 14px;
+            top: 5px;
+            width: 15px;
+            height: 15px;
+            background: white;
+            border: 3px solid var(--primary);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .time {
+            display: inline-block;
+            font-weight: bold;
+            color: var(--primary);
+            font-size: 0.9em;
+            margin-bottom: 8px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .title-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .icon {
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 1.25em;
+            color: #2d3436;
+        }
+
+        .content {
+            font-size: 0.95em;
+            line-height: 1.6;
+            color: #636e72;
+        }
+
+        .parking-info {
+            background: #f1f2f6;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 0.85em;
+            margin-top: 10px;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .btn {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 0.9em;
+            font-weight: bold;
+            transition: all 0.2s;
+        }
+
+        .btn-map { background-color: var(--primary); color: white; }
+        .btn-intro { background-color: white; color: var(--primary); border: 1.5px solid var(--primary); }
+
+        .btn:active { opacity: 0.7; transform: scale(0.98); }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #b2bec3;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>宜蘭包棟入住前一日遊</h1>
+    </div>
+
+    <div class="timeline">
+        
+        <div class="timeline-item">
+            <span class="time">07:30</span>
+            <div class="card">
+                <div class="title-row">
+                    <span class="icon">🚗</span>
+                    <h2>啟程出發</h2>
+                </div>
+                <div class="content">預計車程：1 小時 5 分 (68.9 公里)</div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <span class="time">09:00 - 10:30</span>
+            <div class="card">
+                <div class="title-row">
+                    <span class="icon">🦆</span>
+                    <h2>甲鳥園</h2>
+                </div>
+                <div class="content">
+                    門票：$100 / 位<br>
+                    亮點：現代清水模鴨舍、餵鴨體驗
+                </div>
+                <div class="parking-info">🅿️ 免費停車</div>
+                <div class="btn-group">
+                    <a href="https://www.google.com/maps/search/?api=1&query=甲鳥園" target="_blank" class="btn btn-map">開啟導航</a>
+                    <a href="https://bunnyann.tw/a-bird-garden/" target="_blank" class="btn btn-intro">地點介紹</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <span class="time">11:00 - 12:00</span>
+            <div class="card">
+                <div class="title-row">
+                    <span class="icon">🥣</span>
+                    <h2>台灣碗盤博物館</h2>
+                </div>
+                <div class="content">
+                    門票：$50 / 位<br>
+                    亮點：懷舊台灣文化、特色碗盤收藏
+                </div>
+                <div class="parking-info">🅿️ 免費停車</div>
+                <div class="btn-group">
+                    <a href="https://www.google.com/maps/search/?api=1&query=台灣碗盤博物館" target="_blank" class="btn btn-map">開啟導航</a>
+                    <a href="https://yuki.tw/read-108491.html" target="_blank" class="btn btn-intro">地點介紹</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <span class="time">12:30 - 14:00</span>
+            <div class="card">
+                <div class="title-row">
+                    <span class="icon">🍲</span>
+                    <h2>66火鍋大道</h2>
+                </div>
+                <div class="content">
+                    用餐時間：90 分鐘<br>
+                    <b>※ 位子僅保留 10 分鐘</b>
+                </div>
+                <div class="parking-info">
+                    🅿️ Times 羅東中華路停車場<br>
+                    (平日半小時 $20)
+                </div>
+                <div class="btn-group">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Times+羅東中華路停車場" target="_blank" class="btn btn-map">導航停車場</a>
+                    <a href="https://blog.udn.com/G_101358585909971288/179938287" target="_blank" class="btn btn-intro">地點介紹</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <span class="time">14:30 - 16:00</span>
+            <div class="card">
+                <div class="title-row">
+                    <span class="icon">🦦</span>
+                    <h2>水岸-森林物語</h2>
+                </div>
+                <div class="content">
+                    門票：$200 / 位<br>
+                    亮點：水豚君、梅花鹿可愛動物互動
+                </div>
+                <div class="parking-info">🅿️ 免費停車</div>
+                <div class="btn-group">
+                    <a href="https://www.google.com/maps/search/?api=1&query=水岸森林物語" target="_blank" class="btn btn-map">開啟導航</a>
+                    <a href="https://bunnyann.tw/riparian-forest03a23/" target="_blank" class="btn btn-intro">地點介紹</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <span class="time">16:10 ~ </span>
+            <div class="card">
+                <div class="title-row">
+                    <span class="icon">🏡</span>
+                    <h2>民宿 - 放鬆居</h2>
+                </div>
+                <div class="content">
+                    抵達三星鄉，享受愜意時光。
+                </div>
+                <div class="btn-group">
+                    <a href="https://www.google.com/maps/search/?api=1&query=宜蘭放鬆居" target="_blank" class="btn btn-map">開啟導航</a>
+                    <a href="https://have-fun-house.com/" target="_blank" class="btn btn-intro">地點介紹</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        🌿 祝您有一段愉快的宜蘭旅程！
+    </div>
+</div>
+
+</body>
+</html>
